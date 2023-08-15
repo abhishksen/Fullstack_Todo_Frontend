@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+$background-color: #222831;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    @media screen and (max-width: 768px) {
+        background: $background-color
+    }
+
+}
+
+@import "./login.scss";
+@import "./header.scss";
+@import "./profile.scss";
+@import "./home.scss";
+@import "./todo.scss";

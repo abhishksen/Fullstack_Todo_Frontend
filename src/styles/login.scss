@@ -1,0 +1,98 @@
+$primary-color: #00ADB5;
+$secondary-color: #393E46;
+$background-color: #222831;
+$text-color: #EEEEEE;
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    form {
+        background-color: $background-color;
+        border-radius: 8px;
+        padding: 25px 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 400px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            width: 90%;
+        }
+
+        input {
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid $secondary-color;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: $background-color;
+            color: $text-color;
+
+            &:last-child {
+                margin-bottom: 20px;
+            }
+
+            &:focus {
+                outline: none;
+                border-color: $primary-color;
+            }
+        }
+
+        button {
+            background-color: $primary-color;
+            color: $text-color;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 95%;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid $secondary-color;
+        }
+
+        h6 {
+            text-align: center;
+            font-size: 14px;
+            color: $text-color;
+            margin: 0;
+
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            color: $primary-color;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 16px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
